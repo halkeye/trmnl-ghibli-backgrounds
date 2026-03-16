@@ -21,9 +21,6 @@ Princess Mononoke_3.png
 Princess Mononoke_33.png
 {% endcapture %}
 
-{"file_list":["Howls Moving Castle_11.png", "Howls Moving Castle_16.png", "Howls Moving Castle_40.png", "Kikis Delivery Service_1.png"]}
-
-
 {% assign images = file_list | strip | newline_to_br | split: "<br />" %}
 {% assign random_filename = images | sample | strip_newlines | strip %}
 {% assign formatted_filename = random_filename | replace: ' ', '%20' %}
